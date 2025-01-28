@@ -221,15 +221,17 @@ main> section{
 
 /* Footer section */
 footer {
-    width: 850px; 
+    width: 90%; /* Use a percentage for responsiveness */
+    max-width: 850px; /* Ensure it doesn't exceed 850px */
     height: 70px;
     font-size: 1.25rem;
-    font-weight: 400; /* Corrected this: font-weight does not use px */
+    font-weight: 400; 
     border-radius: 8px;
     background: rgb(255, 244, 231);
     text-align: center;
-    margin: 24px auto; /* Centers horizontally */
+    margin: 24px auto; /* Centered horizontally */
     padding-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
 
 
@@ -246,6 +248,10 @@ footer {
     .facts-container, 
     .sponsor-company{
         grid-template-columns: 1fr;
+    }
+
+    .nav-links{
+        gap:20px; 
     }
 
     .facts-container {
@@ -266,8 +272,10 @@ footer {
         margin-left: 20px;
 
     }
-    .footer{
-        width: 200px;
+    footer {
+        font-size: 0.9rem; 
+        padding: 10px; 
+        border-radius: 5px; 
     }
     
 }
